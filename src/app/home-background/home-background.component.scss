@@ -1,0 +1,104 @@
+.container{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+}
+
+.sky{
+      background-color: #87CEEB;
+      flex: 3;
+      z-index: -1;
+}
+
+.ground{
+      background-color: #77DD77;
+      flex: 1;
+      z-index: -1;
+}
+
+.sun{
+      position: fixed;
+      z-index: 2;
+
+      background-color: yellow;
+      aspect-ratio: 1 / 1;
+      width: 10em;
+      border-radius: 100%;
+
+      margin: 5em 0 0 5em;
+}
+
+.sunRay{
+      position: absolute;
+      background-color: yellow;
+      width: 15em;
+      height: .5em;
+      border-radius: 100px;
+
+      margin: 50% 0 0 -25%;
+}
+
+.second{
+      rotate: 90deg;
+}
+
+.third{
+      rotate: 45deg;
+}
+
+.fourth{
+      rotate: -45deg;
+}
+
+.sunLight{
+      position: fixed;
+      z-index: 1;
+
+      border-radius: 100%;
+      background: rgb(255,255,0);
+      background: radial-gradient(circle, rgba(255,255,0,1) 0%, rgba(255,255,0,0) 70%);
+      aspect-ratio: 1 / 1;
+      width: 15em;
+
+      margin: 2.7em 0 0 2.5em;
+}
+
+.cloud{
+      position: fixed;
+      z-index: 1;
+}
+
+.cloud.left{
+      top: 7em;
+      left: 30em;
+}
+
+.cloud.right{
+      top: 12em;
+      left: 70em;
+}
+
+.base{
+      background-color: white;
+      width: 15em;
+      height: 5em;
+      border-radius: 100px;
+}
+
+.leftCircle{
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      width: 5em;
+      background-color: white;
+      border-radius: 100%;
+      margin: -50% 0 0 15%;
+}
+
+.rightCircle{
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      width: 8em;
+      background-color: white;
+      border-radius: 100%;
+      margin: -60% 0 0 35%;
+}

@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeBackgroundComponent } from './home-background/home-background.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeBackgroundComponent
   ],
   imports: [
     BrowserModule,
